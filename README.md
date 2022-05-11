@@ -8,6 +8,10 @@
 ### To create spring project
 `https://start.spring.io/`
 
+### Extensions for VSCode
+- Java Extension Pack
+- Spring Initializr Java Support
+
 https://spring.io/guides/gs/rest-service/ <br>
 https://dzone.com/articles/understanding-the-basics-of-spring-vs-spring-boot <br>
 https://en.wikipedia.org/wiki/Java_annotation <br>
