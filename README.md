@@ -1,6 +1,6 @@
 ### Test the server
-`./gradlew build`
-`./gradlew bootRun`
+- `./gradlew build`
+- `./gradlew bootRun`
 
 ### Kill server instance
 - `lsof -i :8081`
