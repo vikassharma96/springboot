@@ -1,4 +1,4 @@
-package com.example.restservice;
+package com.teckudos.restservice.models;
 
 public class Greeting {
 

@@ -1,6 +1,6 @@
-package com.example.restservice;
+package com.teckudos.restservice.models;
 
-class CreditCard {
+public class CreditCard {
     String name;
     String creditCardNumber;
 

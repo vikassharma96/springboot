@@ -1,4 +1,4 @@
-package com.example.restservice;
+package com.teckudos.restservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RestServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RestServiceApplication.class, args); // non blocking call
-        System.out.println("Will I be called?");
+        SpringApplication.run(RestServiceApplication.class, args); // non-blocking call
+        System.out.println("It will gets printed!");
     }
 
 }
