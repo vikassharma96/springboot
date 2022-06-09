@@ -24,3 +24,4 @@ https://www.baeldung.com/spring-new-requestmapping-shortcuts <br>
 https://www.baeldung.com/jackson-object-mapper-tutorial
 https://start.spring.io/
 https://spotbugs.github.io/
+https://www.baeldung.com/jackson-annotations

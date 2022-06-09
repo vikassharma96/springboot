@@ -1,11 +1,16 @@
 package com.teckudos.restservice.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class User {
     private int id;
     private String name;
     private String username;
-    private String email;
+    @JsonProperty("email")
+    private String emailId;
 
+    // getter and setters will be called if variables are declared
+    // private by Jackson to serialize/deserialize
     public int getId() {
         return id;
     }
@@ -30,17 +35,17 @@ public class User {
         this.username = username;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailId() {
+        return emailId;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
     }
 
     @Override
     public String toString() {
-        return "User [id=" + id + ", name=" + name + ", username=" + username + ", email=" + email +"]";
+        return "User [id=" + id + ", name=" + name + ", username=" + username + ", emailId=" + emailId + "]";
     }
 
 }

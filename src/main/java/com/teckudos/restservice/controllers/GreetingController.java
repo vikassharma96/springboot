@@ -29,9 +29,10 @@ public class GreetingController {
     public Greeting greeting(@RequestParam(value = "name", defaultValue = "World") String name) throws IOException {
         System.out.println("Greetings");
         ObjectMapper objectMapper = new ObjectMapper();
-        File file = new File("src/main/java/com/teckudos/restservice/files/user.json");
+        File inputFile = new File("src/main/java/com/teckudos/restservice/files/user.json");
+        File outputFile = new File("src/main/java/com/teckudos/restservice/files/readOutput.json");
         // deserialization
-        User[] users = objectMapper.readValue(file, User[].class);
+        User[] users = objectMapper.readValue(inputFile, User[].class);
         for (User user : users) {
             System.out.println("User : " + user);
         }
@@ -41,6 +42,8 @@ public class GreetingController {
             String guestName = users[idx].getName();
             name = guestName;
         }
+        // serialization
+        objectMapper.writeValue(outputFile, users);
         Greeting greetingMessage = new Greeting(counter.incrementAndGet(), String.format(template, name));
         return greetingMessage;
     }
